@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Home</title>
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
@@ -25,14 +26,17 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Custom Theme files -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="O-KO Judo Club"/>
-    <script type="application/x-javascript"> addEventListener("load", function () {
-        setTimeout(hideURLbar, 0);
-    }, false);
-    function hideURLbar() {
-        window.scrollTo(0, 1);
-    } </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="O-KO Judo Club" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
     <!-- //Custom Theme files -->
     <!-- js -->
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -42,11 +46,13 @@
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
                 event.preventDefault();
 
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
             });
         });
     </script>
@@ -54,315 +60,318 @@
     <!-- email library start-->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function() {
             emailjs.init("user_bahtaQWuImzK13kyLrbos");
         })();
     </script>
     <!-- email library end-->
 </head>
+
 <body>
-<!--baner-->
-<div class="baner" id="home">
-    <div class="container">
-        <div class="logo">
-            <h1><a href="index.html"> <span class="jlogo">O-KO</span> <span class="jlogo">J</span>udo</a></h1>
-        </div>
-        <div class="baner-text">
-            <h2>THE HARDER YOU TRAIN THE SHORTER THE FIGHT</h2>
+    <!--baner-->
+    <div class="baner" id="home">
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <a href="index.html"> <span class="jlogo">O-KO</span> <span class="jlogo">J</span>udo</a>
+                </h1>
+            </div>
+            <div class="baner-text">
+                <h2>THE HARDER YOU TRAIN THE SHORTER THE FIGHT</h2>
+            </div>
         </div>
     </div>
-</div>
-<!--//baner-->
-<!--navigation-->
-<div class="top-nav">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
+    <!--//baner-->
+    <!--navigation-->
+    <div class="top-nav">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> <span class="jlogo">J</span>udo </a>
+                    <a class="navbar-brand" href="index.html"> <span class="jlogo">J</span>udo </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-center cl-effect-15">
+                        <li><a href="#home" class="active scroll" data-hover="Home">Home</a></li>
+                        <li><a href="#about" class="scroll" data-hover="About">About</a></li>
+                        <li><a href="#team" class="scroll" data-hover="Instructors">Instructors</a></li>
+                        <li><a href="#gallery" class="scroll" data-hover="Gallery">Gallery</a></li>
+                        <li><a href="#news" class="scroll" data-hover="News">News</a></li>
+                        <li><a href="#contact" class="scroll" data-hover="Contact">Contact</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-center cl-effect-15">
-                    <li><a href="#home" class="active scroll" data-hover="Home">Home</a></li>
-                    <li><a href="#about" class="scroll" data-hover="About">About</a></li>
-                    <li><a href="#team" class="scroll" data-hover="Instructors">Instructors</a></li>
-                    <li><a href="#gallery" class="scroll" data-hover="Gallery">Gallery</a></li>
-                    <li><a href="#news" class="scroll" data-hover="News">News</a></li>
-                    <li><a href="#contact" class="scroll" data-hover="Contact">Contact</a></li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </nav>
-</div>
-<!-- script-for sticky-nav -->
-<script>
-    $(document).ready(function () {
-        var navoffeset = $(".top-nav").offset().top;
-        $(window).scroll(function () {
-            var scrollpos = $(window).scrollTop();
-            if (scrollpos >= navoffeset) {
-                $(".top-nav").addClass("fixed");
-            } else {
-                $(".top-nav").removeClass("fixed");
-            }
+        </nav>
+    </div>
+    <!-- script-for sticky-nav -->
+    <script>
+        $(document).ready(function() {
+            var navoffeset = $(".top-nav").offset().top;
+            $(window).scroll(function() {
+                var scrollpos = $(window).scrollTop();
+                if (scrollpos >= navoffeset) {
+                    $(".top-nav").addClass("fixed");
+                } else {
+                    $(".top-nav").removeClass("fixed");
+                }
+            });
+
         });
+    </script>
+    <!-- /script-for sticky-nav -->
+    <!--navigation-->
+    <!--about-->
+    <div class="about" id="about">
+        <div class="container">
+            <h3 class="title">Welcome to our page</h3>
+            <p>Join us as we explore this fascinating (not to mention enjoyable) martial art that is focussed on the throw, pin, lock and fall.</p>
 
-    });
-</script>
-<!-- /script-for sticky-nav -->
-<!--navigation-->
-<!--about-->
-<div class="about" id="about">
-    <div class="container">
-        <h3 class="title">Welcome to our page</h3>
-        <p>Join us as we explore this fascinating (not to mention enjoyable) martial art that is focussed on the throw, pin, lock and fall.</p>
-
-    </div>
-</div>
-<!--//about-->
-<!--slid-->
-<div class="slid" id="slid">
-    <div class="container">
-        <div class="slid-info">
-            <h4>About Us</h4>
-            <p>The O-KO Judo Club has been providing judo classes in and around Sydney for over 2 years. </p>
-
-            <p> Prospective members and visitors who are experienced in Judo (or a similar martial art) are always welcome in our general training classes.</p>
         </div>
     </div>
-</div>
-<!--//about-->
-<!--special-->
-<div class="special">
-    <div class="container">
-        <div class="col-md-6 special-grids">
-            <h3 class="title">Our Specialization</h3>
-            <p>Prospective members who are new to the sport of Judo are encouraged to take part in our Judo Starter courses.</p>
+    <!--//about-->
+    <!--slid-->
+    <div class="slid" id="slid">
+        <div class="container">
+            <div class="slid-info">
+                <h4>About Us</h4>
+                <p>The O-KO Judo Club has been providing judo classes in and around Sydney for over 2 years. </p>
+
+                <p> Prospective members and visitors who are experienced in Judo (or a similar martial art) are always welcome in our general training classes.</p>
+            </div>
         </div>
-        <div class="col-md-6 special-grids">
-            <h3 class="title">What We do</h3>
+    </div>
+    <!--//about-->
+    <!--special-->
+    <div class="special">
+        <div class="container">
+            <div class="col-md-6 special-grids">
+                <h3 class="title">Our Specialization</h3>
+                <p>Prospective members who are new to the sport of Judo are encouraged to take part in our Judo Starter courses.</p>
+            </div>
+            <div class="col-md-6 special-grids">
+                <h3 class="title">What We do</h3>
 
                 <p> Our training focuses on basic to intermediate level Judo skills and allows participants to progress with confidence into our regular training classes. </p>
 
+            </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
     </div>
-</div>
-<!--team-->
-<div class="team" id="team">
-    <div class="container">
-        <h3 class="title">Our Head Instructor </h3>
-        <div class="team-grids">
+    <!--team-->
+    <div class="team" id="team">
+        <div class="container">
+            <h3 class="title">Our Head Instructor </h3>
+            <div class="team-grids">
 
-            <div class="col-md-12 team-grid">
-                <div class="team-grid-right aliquam">
-                    <img src="images/img2.jpg" alt=" " class="img-responsive"/>
-                </div>
-                <div class="team-grid-left non">
-                    <h4>Hao Wang</h4>
-                    <p>2016 New South Wales State Senior Men +100kg. Championship</p>
-                    <p>2016 Australian Canberra trials Championship</p>
-                    <p>2015 Australia trials Championship, Melbourne, </p>
-                </div>
+                <div class="col-md-12 team-grid">
+                    <div class="team-grid-right aliquam">
+                        <img src="images/img2.jpg" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="team-grid-left non">
+                        <h4>Hao Wang</h4>
+                        <p>2016 New South Wales State Senior Men +100kg. Championship</p>
+                        <p>2016 Australian Canberra trials Championship</p>
+                        <p>2015 Australia trials Championship, Melbourne, </p>
+                    </div>
 
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--//team-->
+    <!--gallery-->
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <h3 class="title">Our Gallery</h3>
+            <div class="top-gallery">
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/large/g1.jpg" class="swipebox">
+                        <img src="images/small/g1.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>O-KO Judo</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/large/g2.jpg" class="swipebox">
+                        <img src="images/small/g2.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>O-KO Judo</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/large/g3.jpg" class="swipebox">
+                        <img src="images/small/g3.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>O-KO Judo</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/large/g4.jpg" class="swipebox">
+                        <img src="images/small/g4.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>O-KO Judo</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/large/g5.jpg" class="swipebox">
+                        <img src="images/small/g5.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>O-KO Judo</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/large/g6.jpg" class="swipebox">
+                        <img src="images/small/g6.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>O-KO Judo</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <script src="js/jquery.swipebox.min.js"></script>
+            <script type="text/javascript">
+                jQuery(function($) {
+                    $(".swipebox").swipebox();
+                });
+            </script>
+        </div>
+    </div>
+    <!--//gallery-->
+    <!--news-->
+    <div class="news" id="news">
+        <div class="container">
+            <h3 class="title">News & Events</h3>
+            <div class="col-md-6 news-grids">
+                <div class="news-grids-left">
+                    <img src="images/img15.jpg" class="img-responsive" alt="/">
+                </div>
+                <div class="news-grids-right">
+                    <h5> August 20, 2016</h5>
+                    <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 news-grids">
+                <div class="news-grids-left">
+                    <img src="images/img16.jpg" class="img-responsive" alt="/">
+                </div>
+                <div class="news-grids-right">
+                    <h5> August 9, 2016</h5>
+                    <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 news-grids">
+                <div class="news-grids-left">
+                    <img src="images/img17.jpg" class="img-responsive" alt="/">
+                </div>
+                <div class="news-grids-right">
+                    <h5> July 23, 2016</h5>
+                    <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 news-grids">
+                <div class="news-grids-left">
+                    <img src="images/img18.jpg" class="img-responsive" alt="/">
+                </div>
+                <div class="news-grids-right">
+                    <h5> July 15, 2016</h5>
+                    <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem </p>
+                </div>
                 <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
-</div>
-<!--//team-->
-<!--gallery-->
-<div class="gallery" id="gallery">
-    <div class="container">
-        <h3 class="title">Our Gallery</h3>
-        <div class="top-gallery">
-            <div class="col-md-4 gallery-grid gallery1">
-                <a href="images/large/g1.jpg" class="swipebox">
-                    <img src="images/small/g1.jpg" class="img-responsive" alt="/">
-                    <div class="textbox">
-                        <h4>O-KO Judo</h4>
-                    </div>
-                </a>
+    <!--//news-->
+    <!--contact-->
+    <div id="contact" class="contact">
+        <div class="container">
+            <h3 class="title">Contact Us</h3>
+            <div class="col-md-12 contact-right">
+                <form id="myForm">
+                    <input type="text" placeholder="Name" id="inquiry_name" required>
+                    <input type="email" placeholder="Email" id="inquiry_email" required>
+                    <input type="text" placeholder="Telephone" id="inquiry_phone">
+                    <textarea id="inquiry_message" placeholder="Message..."></textarea>
+                    <div id="inquiry_response" style="color:#5BD982; font-weight: bold;"></div>
+                    <input type="submit" value="Submit" id="myFormSubmit">
+                </form>
             </div>
-            <div class="col-md-4 gallery-grid gallery1">
-                <a href="images/large/g2.jpg" class="swipebox">
-                    <img src="images/small/g2.jpg" class="img-responsive" alt="/">
-                    <div class="textbox">
-                        <h4>O-KO Judo</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 gallery-grid gallery1">
-                <a href="images/large/g3.jpg" class="swipebox">
-                    <img src="images/small/g3.jpg" class="img-responsive" alt="/">
-                    <div class="textbox">
-                        <h4>O-KO Judo</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 gallery-grid gallery1">
-                <a href="images/large/g4.jpg" class="swipebox">
-                    <img src="images/small/g4.jpg" class="img-responsive" alt="/">
-                    <div class="textbox">
-                        <h4>O-KO Judo</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 gallery-grid gallery1">
-                <a href="images/large/g5.jpg" class="swipebox">
-                    <img src="images/small/g5.jpg" class="img-responsive" alt="/">
-                    <div class="textbox">
-                        <h4>O-KO Judo</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 gallery-grid gallery1">
-                <a href="images/large/g6.jpg" class="swipebox">
-                    <img src="images/small/g6.jpg" class="img-responsive" alt="/">
-                    <div class="textbox">
-                        <h4>O-KO Judo</h4>
-                    </div>
-                </a>
+            <div class="col-md-12 contact-left">
+                <ul>
+                    <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Jamieson St, Sydney Olympic Park, NSW 2127, Australia.
+                    </li>
+                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 0451 510 608
+                    </li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <a href="mailto:957065912@qq.com">957065912@qq.com</a>
+                    </li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.3244979178407!2d151.0580447150654!3d-33.82974128066709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a497c203062b%3A0x66c8cbf6b80fc355!2sJamieson+St%2C+Sydney+Olympic+Park+NSW+2127!5e0!3m2!1sen!2sau!4v1475282321017"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </li>
+                </ul>
             </div>
             <div class="clearfix"></div>
         </div>
-        <script src="js/jquery.swipebox.min.js"></script>
-        <script type="text/javascript">
-            jQuery(function ($) {
-                $(".swipebox").swipebox();
-            });
-        </script>
     </div>
-</div>
-<!--//gallery-->
-<!--news-->
-<div class="news" id="news">
-    <div class="container">
-        <h3 class="title">News & Events</h3>
-        <div class="col-md-6 news-grids">
-            <div class="news-grids-left">
-                <img src="images/img15.jpg" class="img-responsive" alt="/">
-            </div>
-            <div class="news-grids-right">
-                <h5> August 20, 2016</h5>
-                <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt
-                    ut labore et dolore magnam aliquam quaerat voluptatem </p>
-            </div>
-            <div class="clearfix"></div>
+    <!--//contact-->
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2016.O-KO Judo Club. All rights reserved.
         </div>
-        <div class="col-md-6 news-grids">
-            <div class="news-grids-left">
-                <img src="images/img16.jpg" class="img-responsive" alt="/">
-            </div>
-            <div class="news-grids-right">
-                <h5> August 9, 2016</h5>
-                <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt
-                    ut labore et dolore magnam aliquam quaerat voluptatem </p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="col-md-6 news-grids">
-            <div class="news-grids-left">
-                <img src="images/img17.jpg" class="img-responsive" alt="/">
-            </div>
-            <div class="news-grids-right">
-                <h5> July 23, 2016</h5>
-                <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt
-                    ut labore et dolore magnam aliquam quaerat voluptatem </p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="col-md-6 news-grids">
-            <div class="news-grids-left">
-                <img src="images/img18.jpg" class="img-responsive" alt="/">
-            </div>
-            <div class="news-grids-right">
-                <h5> July 15, 2016</h5>
-                <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt
-                    ut labore et dolore magnam aliquam quaerat voluptatem </p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="clearfix"></div>
     </div>
-</div>
-<!--//news-->
-<!--contact-->
-<div id="contact" class="contact">
-    <div class="container">
-        <h3 class="title">Contact Us</h3>
-        <div class="col-md-7 contact-right">
-            <form id="myForm">
-                <input type="text" placeholder="Name" id="inquiry_name" required>
-                <input type="email" placeholder="Email" id="inquiry_email" required>
-                <input type="text" placeholder="Telephone" id="inquiry_phone">
-                <textarea id="inquiry_message" placeholder="Message..."></textarea>
-                <div id="inquiry_response" style="color:#5BD982; font-weight: bold;"></div>
-                <input type="submit" value="Submit" id="myFormSubmit">
-            </form>
-        </div>
-        <div class="col-md-5 contact-left">
-            <ul>
-                <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                    Jamieson St, Sydney Olympic Park, NSW 2127, Australia.
-                </li>
-                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-                    0451 510 608
-                </li>
-                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    <a href="mailto:957065912@qq.com">957065912@qq.com</a>
-                </li>
-                <li>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.3244979178407!2d151.0580447150654!3d-33.82974128066709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a497c203062b%3A0x66c8cbf6b80fc355!2sJamieson+St%2C+Sydney+Olympic+Park+NSW+2127!5e0!3m2!1sen!2sau!4v1475282321017" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </li>
-            </ul>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
-<!--//contact-->
-<!--footer-->
-<div class="footer">
-    <div class="container">
-        <p>Copyright &copy; 2016.O-KO Judo Club. All rights reserved.
-    </div>
-</div>
-<!--//footer-->
-<!-- Bootstrap core JavaScript
+    <!--//footer-->
+    <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/bootstrap.js"></script>
-<script>
-    $(document).ready(function(){
-       $('#myFormSubmit').click(function (e) {
-           e.preventDefault();
-           var name = $('#inquiry_name').val();
-           var email = $('#inquiry_email').val();
-           var phone = $('#inquiry_phone').val();
-           var message = $('#inquiry_message').val();
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myFormSubmit').click(function(e) {
+                e.preventDefault();
+                var name = $('#inquiry_name').val();
+                var email = $('#inquiry_email').val();
+                var phone = $('#inquiry_phone').val();
+                var message = $('#inquiry_message').val();
 
-           $('#inquiry_response').html('Sending your inquiry, please wait.');
+                $('#inquiry_response').html('Sending your inquiry, please wait.');
 
-           emailjs.send("gmail","template_kSNRIEnR",{from_name: name, from_email: email, from_phone: phone, message: message})
-               .then(function(response) {
-               console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-               if(response.status == 200){
-                   $('#inquiry_response').html('Your inquiry has been sent out. Thanks for your inquiry');
-               }
-           }, function(err) {
-                   $('#inquiry_response').html("FAILED. error=", err);
-           });;
-       });
-    });
-</script>
+                emailjs.send("gmail", "template_kSNRIEnR", {
+                        from_name: name,
+                        from_email: email,
+                        from_phone: phone,
+                        message: message
+                    })
+                    .then(function(response) {
+                        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                        if (response.status == 200) {
+                            $('#inquiry_response').html('Your inquiry has been sent out. Thanks for your inquiry');
+                        }
+                    }, function(err) {
+                        $('#inquiry_response').html("FAILED. error=", err);
+                    });;
+            });
+        });
+    </script>
 </body>
+
 </html>
